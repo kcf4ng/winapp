@@ -33,6 +33,7 @@
             this.ball = new System.Windows.Forms.PictureBox();
             this.bat = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ball)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bat)).BeginInit();
             this.SuspendLayout();
@@ -64,11 +65,21 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(805, 440);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(182, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "鍵盤左右方向鍵 : 控制馬力歐方向";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bat);
             this.Controls.Add(this.ball);
             this.MaximizeBox = false;
@@ -81,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ball)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bat)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -89,6 +101,7 @@
         private System.Windows.Forms.PictureBox ball;
         private System.Windows.Forms.PictureBox bat;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
